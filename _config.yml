@@ -1,0 +1,50 @@
+# Vigil site configuration (Just the Docs on Jekyll)
+title: Vigil
+description: >-
+  A 12-month, lab-driven course from zero IT experience to a working
+  cybersecurity practitioner. AI-augmented. Hands-on. Honest about ethics
+  and legality.
+
+# Canonical site URL (served from the custom domain in CNAME). Mirrors the
+# agentwright.lernen.dev pattern.
+url: https://vigil.lernen.dev
+baseurl: ""
+
+# Theme. remote_theme works on GitHub Pages; the Gemfile pins the same theme
+# for local `bundle exec jekyll serve`.
+remote_theme: just-the-docs/just-the-docs
+
+# Search and navigation
+search_enabled: true
+heading_anchors: true
+nav_sort: case_insensitive
+
+# Mermaid diagram support (```mermaid fenced blocks render as diagrams)
+mermaid:
+  version: "10.9.0"
+
+aux_links:
+  Vigil on GitHub:
+    - https://github.com/lernen-edu/vigil
+aux_links_new_tab: true
+
+# Footer
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Files and directories kept in the repo but excluded from the published site.
+# .tutor/ (tutor runtime-state templates) and .github/ (the Copilot entry-point
+# shim) travel to the public repo but are not rendered as site pages.
+# (Dot-directories are ignored by Jekyll anyway; listed here for clarity.)
+exclude:
+  - .tutor/
+  - .github/
+  - README.md
+  - LICENSE-CONTENT
+  - LICENSE-CODE
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+
+plugins:
+  - jekyll-remote-theme

@@ -1,0 +1,10 @@
+{
+  "current_month": null,
+  "current_lab": null,
+  "language": null,
+  "floor_start_ts": null,
+  "hint_count": 0,
+  "notebook_committed": false,
+  "last_lab_completed": null,
+  "session_started_ts": null
+}

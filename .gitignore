@@ -1,0 +1,34 @@
+# This .gitignore travels to the public repo. Keep it student-appropriate.
+
+# Jekyll build artifacts (from local previews and the Pages build)
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+
+# macOS
+.DS_Store
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node (in case the student installs anything later)
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment files
+.env
+.env.local
+
+# NOTE: .tutor/ is intentionally committed — it holds the tutor's runtime-state
+# templates (progress.md, lab-log.md, session.json) and the notebook/ scaffold.
+# It is excluded from the *rendered site* via _config.yml, not here.
